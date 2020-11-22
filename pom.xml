@@ -40,16 +40,17 @@
     </properties>
 
     <modules>
-        <module>account-service</module>
         <module>ms-parent</module>
         <module>ms-config</module>
         <module>ms-eureka</module>
+        <module>zipkin-server</module>
+
+        <!--<module>account-service</module>
         <module>ticket-service</module>
         <module>service-common</module>
         <module>notification-service</module>
         <module>gateway-server</module>
-        <module>hystrix-dashboard</module>
-        <module>zipkin-server</module>
+<module>hystrix-dashboard</module>
         <module>admin-server</module>
         <module>user-service</module>
         <module>customer-service</module>
@@ -58,7 +59,7 @@
         <module>oauth2-server-db</module>
         <module>service-common-db</module>
         <module>gateway-server-zuul-db</module>
-        <module>product-service-db</module>
+        <module>product-service-db</module>-->
     </modules>
 
     <dependencyManagement>
