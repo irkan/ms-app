@@ -1,0 +1,43 @@
+server:
+  port: 8502
+
+spring:
+  application:
+    name: ticket-service
+  datasource:
+    url: ${MYSQL_URL:jdbc:mysql://localhost:3306/microserviceapp}
+    username: ${MYSQL_URL:root}
+    password: ${MYSQL_URL:microservice-app}
+  jpa:
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+  rabbitmq:
+    username: ${MYSQL_USERNAME:kapitalbank}
+    password: ${MYSQL_PASSWORD:kapitalbank}
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: msqueue
+  zipkin:
+    base-url: ${ZIPKIN_SERVER_URL:http://localhost:9411/}
+
+  boot:
+    admin:
+      client:
+        url: ${SPRING_BOOT_ADMIN_SERVER_URL:http://localhost:8508}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+eureka:
+  client:
+    instance:
+      hostname: ${EUREKA_SERVER_HOST:localhost}
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVER_URL:http://localhost:8500/eureka/}

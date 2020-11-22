@@ -1,0 +1,47 @@
+server:
+  port: 8510
+    
+spring:
+  application:
+    name: gateway
+    
+eureka:
+  instance: 
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8500/eureka
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 21000
+        timeout:
+          enabled: true
+
+ribbon:
+  ConnectTimeout: 5000
+  ReadTimeout: 5000
+
+#(ribbon.ReadTimeout + ribbon.connectTimeout) * (1+ribbon.maxAutoRetries(default 0) * (ribbon.MaxAutoRetriesNextServer (default 1) + 1)
+#timeoutInMilliseconds = (5000 + 5000) * (1+0)*(1+1) = 20000
+
+zuul:
+  prefix: /gateway
+  ignored-services: "*"
+
+  routes:
+    auth:
+      service-id: auth
+      path: /auth/**
+      strip-prefix: false
+      custom-sensitive-headers: true
+
+    product:
+      service-id: product-service
+      path: /product/**
+      strip-prefix: false
+      custom-sensitive-headers: true

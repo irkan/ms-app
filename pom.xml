@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>az.kapitalbank</groupId>
+    <artifactId>ms-app</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.1</version>
+
+    <name>ms-app</name>
+    <description>Microservice Application</description>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.0.RELEASE</version>
+        <relativePath/>
+    </parent>
+
+    <developers>
+        <developer>
+            <id>irkan</id>
+            <name>Irkan Ahmadov</name>
+            <email>irkan.ehmedov@gmail.com</email>
+            <roles>
+                <role>
+                    Sr. Software Architect
+                </role>
+            </roles>
+        </developer>
+    </developers>
+
+    <properties>
+        <java.version>11</java.version>
+        <spring.cloud.version>Hoxton.RELEASE</spring.cloud.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
+
+    <modules>
+        <module>account-service</module>
+        <module>ms-parent</module>
+        <module>ms-config</module>
+        <module>ms-eureka</module>
+        <module>ticket-service</module>
+        <module>service-common</module>
+        <module>notification-service</module>
+        <module>gateway-server</module>
+        <module>hystrix-dashboard</module>
+        <module>zipkin-server</module>
+        <module>admin-server</module>
+        <module>user-service</module>
+        <module>customer-service</module>
+        <module>gateway-server-zuul</module>
+        <module>oauth2-server</module>
+        <module>oauth2-server-db</module>
+        <module>service-common-db</module>
+        <module>gateway-server-zuul-db</module>
+        <module>product-service-db</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring.cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>**/*.yml</include>
+                    <include>**/*.json</include>
+                </includes>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+</project>

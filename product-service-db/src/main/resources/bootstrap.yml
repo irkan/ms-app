@@ -1,0 +1,9 @@
+
+spring:
+  application:
+    name: product-service
+
+  cloud:
+    config:
+      profile: native
+      uri: ${CONFIG_SERVER_URL:http://localhost:8888}

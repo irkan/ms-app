@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: ${PROFILE:DEV}
+  application:
+    name: oauth2-server
+
+  cloud:
+    config:
+      profile: native
+      uri: ${CONFIG_SERVER_URL:http://localhost:8888}
