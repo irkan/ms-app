@@ -1,4 +1,4 @@
-package az.kapitalbank.oauth2;
+package az.kapitalbank.eureka;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

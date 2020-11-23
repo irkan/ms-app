@@ -1,4 +1,4 @@
-package az.kapitalbank.oauth2.zipkin;
+package az.kapitalbank.zipkin;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

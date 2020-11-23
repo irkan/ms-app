@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: ADMIN-SERVICE
+    name: ms-admin
 
 eureka:
   instance:

@@ -1,4 +1,4 @@
-package az.kapitalbank.oauth2.hystrix;
+package az.kapitalbank.hystrix;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
