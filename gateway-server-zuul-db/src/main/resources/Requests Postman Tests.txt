@@ -4,7 +4,7 @@
 URL DIRECT: http://localhost:8082/auth/oauth/token
 URL GATEWAY ZUUL: http://localhost:8080/gateway/auth/oauth/token
 Authorization: Basic Auth / Username: esales / Password: @123
-Body: x-www-form-urlencoded / username: ronnie.lopes@esales.com.br / password: @123 / grant_type: password
+Body: x-www-form-urlencoded / username: irkan.ehmedov@gmail.com / password: @123 / grant_type: password
 
 • REFRESH TOKEN
 URL DIRECT: http://localhost:8082/auth/oauth/token
