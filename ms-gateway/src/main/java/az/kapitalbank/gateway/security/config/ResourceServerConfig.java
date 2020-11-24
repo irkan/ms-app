@@ -1,4 +1,4 @@
-package az.kapitalbank.eureka.security.config;
+package az.kapitalbank.gateway.security.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

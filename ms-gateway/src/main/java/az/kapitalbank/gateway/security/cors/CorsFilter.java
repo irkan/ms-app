@@ -1,4 +1,4 @@
-package az.kapitalbank.eureka.security.cors;
+package az.kapitalbank.gateway.security.cors;
 
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;

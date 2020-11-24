@@ -1,4 +1,4 @@
-package az.kapitalbank.eureka;
+package az.kapitalbank.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
@@ -8,10 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableZuulProxy
-public class RestGatewayApplication {
+public class GatewayApplication {
 
     public static void main(final String[] args) {
-        SpringApplication.run((Class) RestGatewayApplication.class, args);
+        SpringApplication.run((Class) GatewayApplication.class, args);
     }
 
 }
