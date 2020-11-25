@@ -1,10 +1,11 @@
 server:
-  port: ${SERVER_PORT:8503}
+  port: ${SERVER_PORT:8508}
 spring:
   profiles:
     active: ${PROFILE:DEV}
   application:
-    name: ms-hystrix
+    name: ms-admin
+
   cloud:
     config:
       profile: native

@@ -12,7 +12,7 @@ eureka:
     metadata-map:
       startup: ${random.int}
   client:
-    registryFetchIntervalSeconds: 5
+    registryFetchIntervalSeconds: 30
     serviceUrl:
       defaultZone: ${EUREKA_SERVICE_URL:http://localhost:8500}/eureka/
 
