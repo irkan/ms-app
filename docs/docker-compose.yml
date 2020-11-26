@@ -1,32 +1,25 @@
-version: '3.1'
-
+version: '3.6'
 services:
-  cassandra:
-    image: cassandra
-    ports:
-      - '9042:9042'
-
-  mysql:
-    image: mysql
+  postgres:
+    image: postgres
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: microservice-app
-    ports:
-      - '3306:3306'
+      - DATABASE_HOST=127.0.0.1
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=root
 
-  elasticsearch:
-    image: elasticsearch:6.8.5
     ports:
-      - 9200:9200
-      - 9300:9300
-    environment:
-      discovery.type: single-node
+      - "5432:5432"
+    volumes:
+      - ./docker_postgres_init.sql:/docker-entrypoint-initdb.d/docker_postgres_init.sql
 
-  msrabbitmq:
-    image: rabbitmq:3-management
-    ports:
-      - '5672:5672'
-      - '15672:15672'
+  pgadmin-compose:
+    image: dpage/pgadmin4
     environment:
-      - RABBITMQ_DEFAULT_USER=kapitalbank
-      - RABBITMQ_DEFAULT_PASS=kapitalbank
+      PGADMIN_DEFAULT_EMAIL: "irkan.ehmedov@gmail.com"
+      PGADMIN_DEFAULT_PASSWORD: "123456"
+    ports:
+      - "54321:80"
+    depends_on:
+      - postgres

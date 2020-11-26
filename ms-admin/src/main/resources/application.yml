@@ -1,0 +1,15 @@
+server:
+  port: ${SERVER_PORT:8508}
+
+spring:
+  application:
+    name: ms-admin
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
