@@ -6,6 +6,19 @@ spring:
     active: ${PROFILE:DEV}
   application:
     name: ms-product
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+    jmx:
+      enabled: false
+    datasource:
+      url: jdbc:postgresql://localhost:5432/postgres
+      username: postgres
+      password: Irk@n19890925
 
 eureka:
   instance:
