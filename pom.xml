@@ -49,6 +49,8 @@
         <module>ms-common</module>
         <module>ms-admin</module>
         <module>ms-gateway</module>
+        <module>ms-oauth2</module>
+        <module>ms-product</module>
         <!--<module>account-service</module>
         <module>ticket-service</module>
         <module>service-common</module>

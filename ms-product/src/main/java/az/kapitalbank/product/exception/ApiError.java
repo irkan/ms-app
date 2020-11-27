@@ -1,4 +1,4 @@
-package az.kapitalbank.eureka.exception;
+package az.kapitalbank.product.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

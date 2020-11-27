@@ -1,5 +1,5 @@
 server:
-  port: ${SERVER_PORT:8511}
+  port: 8511
   servlet:
     context-path: /auth
 

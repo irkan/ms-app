@@ -1,7 +1,7 @@
-package az.kapitalbank.eureka;
+package az.kapitalbank.product;
 
-import az.kapitalbank.eureka.entity.Product;
-import az.kapitalbank.eureka.repository.ProductRepository;
+import az.kapitalbank.common.entity.Product;
+import az.kapitalbank.common.repository.ProductRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -16,13 +16,13 @@ import java.util.Optional;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableJpaRepositories({"com.kapitalbank.repository"})
-@EntityScan({"com.kapitalbank.entity"})
-@ComponentScan("com.kapitalbank")
-public class RestProductApplication {
+@EnableJpaRepositories({"az.kapitalbank.common.repository"})
+@EntityScan({"az.kapitalbank.common.entity"})
+@ComponentScan("az.kapitalbank")
+public class ProductApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RestProductApplication.class, args);
+		SpringApplication.run(ProductApplication.class, args);
 	}
 
 	@Bean

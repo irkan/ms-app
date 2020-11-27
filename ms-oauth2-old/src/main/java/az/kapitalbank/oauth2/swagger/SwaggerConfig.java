@@ -1,4 +1,4 @@
-package az.kapitalbank.eureka.swagger;
+package az.kapitalbank.oauth2.swagger;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -17,7 +17,7 @@ public class SwaggerConfig {
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.example.rest.product.controller"))
+                .apis(RequestHandlerSelectors.basePackage("az.kapitalbank.oauth2.controller"))
                 .build()
                 .apiInfo(metaData());
     }
@@ -27,9 +27,9 @@ public class SwaggerConfig {
                 .title("Spring Boot Microservices")
                 .description("Example Microservices")
                 .version("1.0")
-                .contact(new Contact("Ronnie Mikihiro Sato Lopes", "https://esales.com.br/", "irkan.ehmedov@gmail.com"))
-                .license("Private for esales")
-                .licenseUrl("https://esales.com.br/")
+                .contact(new Contact("Irkan Ahmadov", "https://sualsu.az/", "irkan.ehmedov@gmail.com"))
+                .license("GPL")
+                .licenseUrl("http://sualsu.az/")
                 .build();
     }
 }

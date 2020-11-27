@@ -1,0 +1,15 @@
+server:
+  port: ${SERVER_PORT:8512}
+
+spring:
+  profiles:
+    active: ${PROFILE:DEV}
+  application:
+    name: ms-product
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8500/eureka

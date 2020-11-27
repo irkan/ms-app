@@ -1,7 +1,7 @@
-package az.kapitalbank.eureka.controller;
+package az.kapitalbank.product.controller;
 
-import az.kapitalbank.eureka.entity.Product;
-import az.kapitalbank.eureka.service.ProductService;
+import az.kapitalbank.common.entity.Product;
+import az.kapitalbank.common.service.ProductService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;

@@ -77,9 +77,4 @@ public class OAuth2Application {
 		}
 	}
 
-	@Bean
-	public BCryptPasswordEncoder passwordEncoder() {
-		return new BCryptPasswordEncoder();
-	}
-
 }

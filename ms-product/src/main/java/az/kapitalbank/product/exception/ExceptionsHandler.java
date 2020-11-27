@@ -1,4 +1,4 @@
-package az.kapitalbank.eureka.exception;
+package az.kapitalbank.product.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

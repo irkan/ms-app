@@ -1,7 +1,10 @@
-
+server:
+  port: ${SERVER_PORT:8512}
 spring:
+  profiles:
+    active: ${PROFILE:DEV}
   application:
-    name: product-service
+    name: ms-product
 
   cloud:
     config:
