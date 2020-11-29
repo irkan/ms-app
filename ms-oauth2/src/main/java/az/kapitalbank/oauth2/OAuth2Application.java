@@ -22,7 +22,7 @@ import java.util.Collection;
 @EnableDiscoveryClient
 @EnableJpaRepositories({"az.kapitalbank.common.repository"})
 @EntityScan({"az.kapitalbank.common.entity"})
-@ComponentScan("az.kapitalbank.common")
+@ComponentScan("az.kapitalbank")
 public class OAuth2Application {
 
 	public static void main(String[] args) {
@@ -75,11 +75,6 @@ public class OAuth2Application {
 				userSystemRepository.save(userSystem);
 			}
 		}
-	}
-
-	@Bean
-	public BCryptPasswordEncoder passwordEncoder() {
-		return new BCryptPasswordEncoder();
 	}
 
 }

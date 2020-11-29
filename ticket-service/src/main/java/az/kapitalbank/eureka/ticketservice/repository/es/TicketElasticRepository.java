@@ -1,6 +1,6 @@
-package az.kapitalbank.eureka.ticketservice.repository.es;
+package az.kapitalbank.gateway.ticketservice.repository.es;
 
-import az.kapitalbank.eureka.ticketservice.model.es.TicketModel;
+import az.kapitalbank.gateway.ticketservice.model.es.TicketModel;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 
 public interface TicketElasticRepository extends ElasticsearchRepository<TicketModel, String> {

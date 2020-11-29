@@ -1,4 +1,4 @@
-package az.kapitalbank.eureka.messaging;
+package az.kapitalbank.gateway.messaging;
 
 
 import lombok.AllArgsConstructor;

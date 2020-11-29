@@ -1,10 +1,10 @@
-package az.kapitalbank.eureka.api;
+package az.kapitalbank.gateway.api;
 
-import az.kapitalbank.eureka.exceptions.CustomerNotFoundException;
-import az.kapitalbank.eureka.intercomm.AccountClient;
-import az.kapitalbank.eureka.model.Account;
-import az.kapitalbank.eureka.model.Customer;
-import az.kapitalbank.eureka.model.CustomerType;
+import az.kapitalbank.gateway.exceptions.CustomerNotFoundException;
+import az.kapitalbank.gateway.intercomm.AccountClient;
+import az.kapitalbank.gateway.model.Account;
+import az.kapitalbank.gateway.model.Customer;
+import az.kapitalbank.gateway.model.CustomerType;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

@@ -1,6 +1,6 @@
-package az.kapitalbank.eureka.service;
+package az.kapitalbank.gateway.service;
 
-import az.kapitalbank.eureka.model.User;
+import az.kapitalbank.gateway.model.User;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;

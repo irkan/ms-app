@@ -16,7 +16,7 @@ public class ExceptionsHandler {
         final ApiError apiError = ApiError.builder()
                 .timestamp(System.currentTimeMillis())
                 .status(status.value())
-                .error("Não encontrado.")
+                .error("Error occurred.")
                 .message(ex.getMessage())
                 .path(request.getRequestURI())
                 .build();

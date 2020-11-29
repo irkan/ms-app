@@ -1,4 +1,4 @@
-package az.kapitalbank.eureka.accountservice.configuration;
+package az.kapitalbank.gateway.accountservice.configuration;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;

@@ -1,4 +1,4 @@
-package az.kapitalbank.eureka.api;
+package az.kapitalbank.gateway.api;
 
 import org.springframework.web.bind.annotation.*;
 

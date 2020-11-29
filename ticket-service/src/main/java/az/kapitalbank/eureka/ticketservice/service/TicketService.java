@@ -1,6 +1,6 @@
-package az.kapitalbank.eureka.ticketservice.service;
+package az.kapitalbank.gateway.ticketservice.service;
 
-import az.kapitalbank.eureka.ticketservice.dto.TicketDto;
+import az.kapitalbank.gateway.ticketservice.dto.TicketDto;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

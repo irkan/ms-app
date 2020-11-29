@@ -1,4 +1,4 @@
-package az.kapitalbank.eureka.client.contract;
+package az.kapitalbank.gateway.client.contract;
 
 import java.util.Date;
 import lombok.AllArgsConstructor;

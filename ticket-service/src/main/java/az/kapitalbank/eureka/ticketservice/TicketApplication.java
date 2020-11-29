@@ -1,4 +1,4 @@
-package az.kapitalbank.eureka.ticketservice;
+package az.kapitalbank.gateway.ticketservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

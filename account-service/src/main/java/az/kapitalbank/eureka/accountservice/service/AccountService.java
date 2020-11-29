@@ -1,8 +1,8 @@
-package az.kapitalbank.eureka.accountservice.service;
+package az.kapitalbank.gateway.accountservice.service;
 
-import az.kapitalbank.eureka.client.contract.AccountDto;
-import az.kapitalbank.eureka.accountservice.entity.Account;
-import az.kapitalbank.eureka.accountservice.repo.AccountRepository;
+import az.kapitalbank.gateway.client.contract.AccountDto;
+import az.kapitalbank.gateway.accountservice.entity.Account;
+import az.kapitalbank.gateway.accountservice.repo.AccountRepository;
 
 import java.util.Optional;
 import lombok.RequiredArgsConstructor;

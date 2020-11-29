@@ -1,4 +1,4 @@
-package az.kapitalbank.eureka.accountservice.configuration;
+package az.kapitalbank.gateway.accountservice.configuration;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;

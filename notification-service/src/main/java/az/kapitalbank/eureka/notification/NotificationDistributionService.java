@@ -1,6 +1,6 @@
-package az.kapitalbank.eureka.notification;
+package az.kapitalbank.gateway.notification;
 
-import az.kapitalbank.eureka.messaging.TicketNotification;
+import az.kapitalbank.gateway.messaging.TicketNotification;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.cloud.stream.messaging.Sink;

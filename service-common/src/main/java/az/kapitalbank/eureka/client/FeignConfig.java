@@ -1,4 +1,4 @@
-package az.kapitalbank.eureka.client;
+package az.kapitalbank.gateway.client;
 
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Configuration;

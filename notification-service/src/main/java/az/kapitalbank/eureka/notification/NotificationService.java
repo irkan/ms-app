@@ -1,4 +1,4 @@
-package az.kapitalbank.eureka.notification;
+package az.kapitalbank.gateway.notification;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

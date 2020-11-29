@@ -1,4 +1,4 @@
-package az.kapitalbank.eureka.exception;
+package az.kapitalbank.gateway.exception;
 
 import org.springframework.web.bind.annotation.ResponseStatus;
 

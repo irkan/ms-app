@@ -1,7 +1,7 @@
-package az.kapitalbank.eureka.config;
+package az.kapitalbank.gateway.config;
 
-import az.kapitalbank.eureka.model.User;
-import az.kapitalbank.eureka.service.UserService;
+import az.kapitalbank.gateway.model.User;
+import az.kapitalbank.gateway.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationProvider;

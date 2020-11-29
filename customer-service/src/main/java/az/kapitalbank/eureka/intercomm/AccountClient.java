@@ -1,6 +1,6 @@
-package az.kapitalbank.eureka.intercomm;
+package az.kapitalbank.gateway.intercomm;
 
-import az.kapitalbank.eureka.model.Account;
+import az.kapitalbank.gateway.model.Account;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

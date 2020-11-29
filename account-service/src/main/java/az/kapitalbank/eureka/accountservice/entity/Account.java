@@ -1,4 +1,4 @@
-package az.kapitalbank.eureka.accountservice.entity;
+package az.kapitalbank.gateway.accountservice.entity;
 
 import java.io.Serializable;
 import java.util.Date;

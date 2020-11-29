@@ -1,4 +1,4 @@
-package az.kapitalbank.eureka.ticketservice.model;
+package az.kapitalbank.gateway.ticketservice.model;
 
 import java.util.Date;
 import javax.persistence.Column;

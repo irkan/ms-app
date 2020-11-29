@@ -1,4 +1,4 @@
-package az.kapitalbank.eureka.config;
+package az.kapitalbank.gateway.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;

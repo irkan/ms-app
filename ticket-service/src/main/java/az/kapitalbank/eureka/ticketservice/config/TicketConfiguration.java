@@ -1,4 +1,4 @@
-package az.kapitalbank.eureka.ticketservice.config;
+package az.kapitalbank.gateway.ticketservice.config;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;

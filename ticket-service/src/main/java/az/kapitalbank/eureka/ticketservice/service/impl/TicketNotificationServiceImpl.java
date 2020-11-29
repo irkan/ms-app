@@ -1,8 +1,8 @@
-package az.kapitalbank.eureka.ticketservice.service.impl;
+package az.kapitalbank.gateway.ticketservice.service.impl;
 
-import az.kapitalbank.eureka.messaging.TicketNotification;
-import az.kapitalbank.eureka.ticketservice.model.Ticket;
-import az.kapitalbank.eureka.ticketservice.service.TicketNotificationService;
+import az.kapitalbank.gateway.messaging.TicketNotification;
+import az.kapitalbank.gateway.ticketservice.model.Ticket;
+import az.kapitalbank.gateway.ticketservice.service.TicketNotificationService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.messaging.Source;

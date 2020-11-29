@@ -1,4 +1,4 @@
-package az.kapitalbank.eureka.model;
+package az.kapitalbank.gateway.model;
 
 public enum CustomerType {
     INDIVIDUAL, COMPANY;

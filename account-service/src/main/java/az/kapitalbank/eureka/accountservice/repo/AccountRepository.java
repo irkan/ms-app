@@ -1,6 +1,6 @@
-package az.kapitalbank.eureka.accountservice.repo;
+package az.kapitalbank.gateway.accountservice.repo;
 
-import az.kapitalbank.eureka.accountservice.entity.Account;
+import az.kapitalbank.gateway.accountservice.entity.Account;
 import org.springframework.data.cassandra.repository.CassandraRepository;
 import org.springframework.stereotype.Repository;
 

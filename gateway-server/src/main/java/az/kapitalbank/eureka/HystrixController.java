@@ -1,4 +1,4 @@
-package az.kapitalbank.eureka;
+package az.kapitalbank.gateway;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

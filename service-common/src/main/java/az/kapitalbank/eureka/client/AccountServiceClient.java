@@ -1,6 +1,6 @@
-package az.kapitalbank.eureka.client;
+package az.kapitalbank.gateway.client;
 
-import az.kapitalbank.eureka.client.contract.AccountDto;
+import az.kapitalbank.gateway.client.contract.AccountDto;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;

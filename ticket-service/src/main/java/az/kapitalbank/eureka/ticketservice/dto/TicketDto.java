@@ -1,4 +1,4 @@
-package az.kapitalbank.eureka.ticketservice.dto;
+package az.kapitalbank.gateway.ticketservice.dto;
 
 import java.util.Date;
 import lombok.AllArgsConstructor;

@@ -1,7 +1,7 @@
-package az.kapitalbank.eureka.api;
+package az.kapitalbank.gateway.api;
 
-import az.kapitalbank.eureka.exception.AccountNotFoundException;
-import az.kapitalbank.eureka.model.Account;
+import az.kapitalbank.gateway.exception.AccountNotFoundException;
+import az.kapitalbank.gateway.model.Account;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 

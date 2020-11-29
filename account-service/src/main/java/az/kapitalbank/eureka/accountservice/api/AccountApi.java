@@ -1,7 +1,7 @@
-package az.kapitalbank.eureka.accountservice.api;
+package az.kapitalbank.gateway.accountservice.api;
 
-import az.kapitalbank.eureka.client.contract.AccountDto;
-import az.kapitalbank.eureka.accountservice.service.AccountService;
+import az.kapitalbank.gateway.client.contract.AccountDto;
+import az.kapitalbank.gateway.accountservice.service.AccountService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Slice;

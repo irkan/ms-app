@@ -1,4 +1,4 @@
-package az.kapitalbank.eureka.ticketservice.model.es;
+package az.kapitalbank.gateway.ticketservice.model.es;
 
 import java.io.Serializable;
 import java.util.Date;

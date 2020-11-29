@@ -1,7 +1,7 @@
-package az.kapitalbank.eureka.ticketservice.api;
+package az.kapitalbank.gateway.ticketservice.api;
 
-import az.kapitalbank.eureka.ticketservice.dto.TicketDto;
-import az.kapitalbank.eureka.ticketservice.service.TicketService;
+import az.kapitalbank.gateway.ticketservice.dto.TicketDto;
+import az.kapitalbank.gateway.ticketservice.service.TicketService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

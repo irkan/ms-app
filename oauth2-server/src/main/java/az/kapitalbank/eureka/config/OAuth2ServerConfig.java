@@ -1,4 +1,4 @@
-package az.kapitalbank.eureka.config;
+package az.kapitalbank.gateway.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

@@ -1,6 +1,6 @@
-package az.kapitalbank.eureka.ticketservice.service;
+package az.kapitalbank.gateway.ticketservice.service;
 
-import az.kapitalbank.eureka.ticketservice.model.Ticket;
+import az.kapitalbank.gateway.ticketservice.model.Ticket;
 
 public interface TicketNotificationService {
 
