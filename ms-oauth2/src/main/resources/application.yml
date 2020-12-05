@@ -4,14 +4,16 @@ server:
     context-path: /auth
 
 spring:
+  profiles:
+    active: ${PROFILE:DEV}
   application:
-    name: auth
+    name: ms-oauth2
   zipkin:
     base-url: http://localhost:9411/
-    boot:
-      admin:
-        client:
-          url: ${SPRING_BOOT_ADMIN_SERVER_URL:http://localhost:8508}
+  boot:
+    admin:
+      client:
+        url: ${SPRING_BOOT_ADMIN_SERVER_URL:http://localhost:8508}
   jpa:
     show-sql: false
     hibernate:
