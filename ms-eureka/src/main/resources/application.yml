@@ -4,19 +4,28 @@ server:
 spring:
   application:
     name: ms-eureka
+  profiles:
+    active: ${PROFILE:DEV}
   zipkin:
     base-url: ${ZIPKIN_SERVER_URL:http://localhost:9411/}
-
   boot:
     admin:
       client:
         url: ${SPRING_BOOT_ADMIN_SERVER_URL:http://localhost:8508}
 
 management:
+  server:
+    port: ${SERVER_PORT:9000}
+  metrics:
+    enable:
+      all: true
+      jvm: true
   endpoints:
     web:
       exposure:
-        include: "*"
+        include: '*'
+    health:
+      show-details: ALWAYS
 
 eureka:
   server:
@@ -27,4 +36,4 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: ${EUREKA_SERVER_URL:http://${eureka.instance.hostname}:${server.port}/eureka/}
+      defaultZone: ${EUREKA_SERVER_URL:http://localhost:${server.port}/eureka/}

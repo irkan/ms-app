@@ -4,12 +4,19 @@ server:
 spring:
   application:
     name: ms-admin
+  profiles:
+    active: ${PROFILE:DEV}
 
 management:
+  server:
+    port: ${SERVER_PORT:9008}
+  metrics:
+    enable:
+      all: true
+      jvm: true
   endpoints:
     web:
       exposure:
-        include: "*"
-  endpoint:
+        include: '*'
     health:
       show-details: ALWAYS
