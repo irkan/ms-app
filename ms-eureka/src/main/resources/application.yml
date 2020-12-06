@@ -31,7 +31,8 @@ management:
 
 eureka:
   server:
-    eviction-interval-timer-in-ms: 5000
+    eviction-interval-timer-in-ms: 1000
+    enableSelfPreservation: true
   instance:
     hostname: ${EUREKA_SERVER_HOST:localhost}
   client:
