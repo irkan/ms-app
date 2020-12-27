@@ -1,12 +1,10 @@
 server:
-  port: ${SERVER_PORT:9411}
+  port: ${SERVER_PORT:8500}
 spring:
   profiles:
     active: ${PROFILE:DEV}
   application:
-    name: ms-zipkin
-  main:
-    allow-bean-definition-overriding: true
+    name: ms-eureka
 
   cloud:
     config:

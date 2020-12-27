@@ -1,6 +1,21 @@
-server:
-  port: ${SERVER_PORT:8503}
+management:
+  server:
+    port: ${SERVER_PORT:9003}
+  metrics:
+    enable:
+      all: true
+      jvm: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+    health:
+      show-details: ALWAYS
 
-spring:
-  application:
-    name: ms-hystrix
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8500/eureka
+

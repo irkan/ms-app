@@ -1,9 +1,19 @@
-server:
-  port: ${SERVER_PORT:8510}
+zuul:
+  prefix: /gateway
+  ignored-services: "*"
 
-spring:
-  application:
-    name: gateway
+  routes:
+    auth:
+      service-id: auth
+      path: /auth/**
+      strip-prefix: false
+      custom-sensitive-headers: true
+
+    product:
+      service-id: product-service
+      path: /product/**
+      strip-prefix: false
+      custom-sensitive-headers: true
 
 eureka:
   instance:
@@ -26,19 +36,19 @@ ribbon:
   ConnectTimeout: 5000
   ReadTimeout: 5000
 
-zuul:
-  prefix: /gateway
-  ignored-services: "*"
+#(ribbon.ReadTimeout + ribbon.connectTimeout) * (1+ribbon.maxAutoRetries(default 0) * (ribbon.MaxAutoRetriesNextServer (default 1) + 1)
+#timeoutInMilliseconds = (5000 + 5000) * (1+0)*(1+1) = 20000
 
-  routes:
-    auth:
-      service-id: auth
-      path: /auth/**
-      strip-prefix: false
-      custom-sensitive-headers: true
-
-    product:
-      service-id: product-service
-      path: /product/**
-      strip-prefix: false
-      custom-sensitive-headers: true
+management:
+  server:
+    port: ${SERVER_PORT:9010}
+  metrics:
+    enable:
+      all: true
+      jvm: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+    health:
+      show-details: ALWAYS

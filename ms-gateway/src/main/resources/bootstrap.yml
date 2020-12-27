@@ -1,12 +1,12 @@
 server:
-  port: ${SERVER_PORT:8500}
+  port: ${SERVER_PORT:8510}
 spring:
   profiles:
     active: ${PROFILE:DEV}
   application:
-    name: ms-eureka
+    name: ms-gateway
 
   cloud:
     config:
-      profile: native
+      profile: ${spring.profiles.active}
       uri: ${CONFIG_SERVER_URL:http://localhost:8888}

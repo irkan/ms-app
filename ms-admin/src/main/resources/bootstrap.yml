@@ -8,5 +8,5 @@ spring:
 
   cloud:
     config:
-      profile: native
+      profile: ${spring.profiles.active}
       uri: ${CONFIG_SERVER_URL:http://localhost:8888}
