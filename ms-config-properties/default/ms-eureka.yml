@@ -1,7 +1,5 @@
 server:
   port: ${SERVER_PORT:8500}
-  servlet:
-    context-path: /eureka
 
 spring:
   application:
