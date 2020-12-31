@@ -6,7 +6,7 @@ spring:
       client:
         url: ${SPRING_BOOT_ADMIN_SERVER_URL:http://localhost:8508}
   jpa:
-    show-sql: true
+    show-sql: false
     hibernate:
       ddl-auto: update
     properties:
@@ -18,19 +18,10 @@ spring:
     url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
     password: Irk@n19890925
-    testWhileIdle: true
-    validationQuery: SELECT 1
-
-eureka:
-  instance:
-    hostname: localhost
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8500/eureka
 
 management:
   server:
-    port: ${SERVER_PORT:9012}
+    port: ${SERVER_PORT:9311}
   metrics:
     enable:
       all: true
@@ -41,3 +32,12 @@ management:
         include: '*'
     health:
       show-details: ALWAYS
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8500/eureka

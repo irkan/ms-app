@@ -1,12 +1,14 @@
 server:
-  port: ${SERVER_PORT:8512}
+  port: ${SERVER_PORT:8511}
+  servlet:
+    context-path: /auth
 spring:
   profiles:
     active: ${PROFILE:DEV}
   application:
-    name: ms-product
+    name: ms-oauth2
 
   cloud:
     config:
-      profile: native
+      profile: ${spring.profiles.active}
       uri: ${CONFIG_SERVER_URL:http://localhost:8888}
