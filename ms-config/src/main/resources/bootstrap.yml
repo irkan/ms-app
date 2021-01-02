@@ -1,21 +1,24 @@
-server:
-  port: ${SERVER_PORT:8888}
-
 spring:
   application:
     name: ms-config
-
-management:
-  server:
-    port: ${SERVER_PORT:9999}
-  metrics:
-    enable:
-      all: true
-      jvm: true
-  endpoints:
-    web:
-      exposure:
-        include: '*'
-    health:
-      show-details: ALWAYS
-
+  cloud:
+    vault:
+      token: myroot
+      kv:
+        enabled: true
+        backend: ${"{application}":${spring.application.name}}
+        default-context: ${"{profile}":dev}
+      scheme: http
+      generic:
+        enabled: false
+      host: localhost
+      port: 8200
+      fail-fast: true
+    config:
+      server:
+        vault:
+          order: 0
+  profiles:
+    active: composite
+  main:
+    allow-bean-definition-overriding: true

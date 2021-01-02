@@ -41,3 +41,6 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://localhost:8500/eureka
+
+data:
+  key2: ${data.key}

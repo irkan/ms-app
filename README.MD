@@ -1,17 +1,13 @@
 
-# Youtube Java SpringCloud Mikroservis Egitimi Serisi Projesi
-- 
-Egitim Icerigi : 
-https://www.youtube.com/playlist?list=PLd0jsEi3hUAdKnXFDDop8V9WfBzHD5WLF
-
-# Gereksinimler
+# Requirements
 * Java JDK 11
 * Docker Desktop
 * IDE (IntelliJ)
 
 
-# Proje Genel Yapisi
+# Project Path
 ![](https://github.com/kapitalbank/microservice-app/blob/master/docs/arch.png)
 
 
-<a href="https://www.patreon.com/bePatron?u=26970812" data-patreon-widget-type="become-patron-button">Become a Patron!</a>
+# Vault installation and configuration to Docker
+docker run -d -p 8200:8200 --name vault -e 'VAULT_DEV_ROOT_TOKEN_ID=myvaulttoken' -e 'VAULT_DEV_LISTEN_ADDRESS=0.0.0.0:8200' vault

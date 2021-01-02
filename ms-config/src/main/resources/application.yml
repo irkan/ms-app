@@ -1,24 +1,39 @@
+server:
+  port: ${SERVER_PORT:8888}
+
 spring:
-  profiles:
-    active: native
----
-spring:
-  profiles: native
   cloud:
     config:
       server:
-        native:
-          search-locations:
-            file:/Users/user/IdeaProjects/ms-app/ms-config-properties/{profile},
-            file:/Users/user/IdeaProjects/ms-app/ms-config-properties/global/{profile}
----
-spring:
-  profiles: git
-  cloud:
-    config:
-      server:
+        composite:
+          - type: git
+            uri: https://github.com/irkan/ms-app.git
+            search-paths:
+              - "ms-config-properties/{profile}"
+            username: irkan
+            password: Irk@n19890925
+        bootstrap: true
         git:
-          uri: https://github.com/irkan/ms-app
-          search-paths:
-            - "ms-config-properties/{profile}"
-            - "ms-config-properties/global/{profile}"
+          order: 1
+
+
+management:
+  server:
+    port: ${SERVER_PORT:9999}
+  metrics:
+    enable:
+      all: true
+      jvm: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+    health:
+      show-details: ALWAYS
+
+data:
+  key2: ${data.key}
+
+
+
+

@@ -50,6 +50,7 @@
         <module>ms-admin</module>
         <module>ms-gateway</module>
         <module>ms-product</module>
+        <module>config-client</module>
     </modules>
 
     <dependencyManagement>
